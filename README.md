@@ -2,7 +2,7 @@
 Repositório criado para gerenciar os projetos e aulas de Linguagens I.
 
 # Desenvolvedor:
-## Murilo Zanini de Carvalho
+- Murilo Zanini de Carvalho
 
 # Princípais Linguagens:
 - Java
