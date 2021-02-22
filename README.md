@@ -8,3 +8,4 @@ Repositório criado para gerenciar os projetos e aulas de Linguagens I.
 - Java
 - Python
 - C
+- Dart
