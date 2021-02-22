@@ -9,3 +9,4 @@ Repositório criado para gerenciar os projetos e aulas de Linguagens I.
 - Python
 - C
 - Dart
+- Flutter
