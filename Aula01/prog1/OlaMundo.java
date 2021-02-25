@@ -8,6 +8,7 @@ class OlaMundo{
         /*
         * Comentário de diversas linhas
         * Continuação do comentário
+        * Nova linha de comentário
         */ 
     }
 }
