@@ -2,17 +2,17 @@ package carvalho.zanini;
 
 public class Conta {
     //Atributos das classe
-    Cliente cliente;
-    double saldo;
-    int numero;
+    private Cliente cliente;
+    private double saldo;
+    private int numero;
 
     //Métodos da classe
-    void depositar(double valor) {
+    public void depositar(double valor) {
         //this.saldo = this.saldo + valor;
         this.saldo += valor;
     }
 
-    boolean sacar(double valor) {
+    public boolean sacar(double valor) {
         if(valor <= this.saldo){
             this.saldo -= valor;
             return true;
@@ -20,7 +20,7 @@ public class Conta {
         return false;
     }
 
-    boolean transferirDinheiro(Conta destino, double valor) {
+    public boolean transferirDinheiro(Conta destino, double valor) {
         if(this.sacar(valor)){
             destino.depositar(valor);
             return true;
@@ -29,8 +29,8 @@ public class Conta {
     }
 
 
-    void visualizarSaldo() {
-        System.out.println("Saldo atual: R$" + this.saldo);
+    public double visualizarSaldo() {
+        return this.saldo;
     }
 
     @Override
