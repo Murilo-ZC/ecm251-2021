@@ -25,6 +25,15 @@ public class Sistema {
             case 1:
                 System.out.println("Saldo Atual: R$" + this.conta.getSaldo());
                 break;
+            case 2:
+                System.out.println("Qual quantia de dinheiro?");
+                double quantiaParaSacar = scanner.nextDouble();
+                if (this.conta.sacar(quantiaParaSacar)){
+                    System.out.println("Operação Realizada com Sucesso!");
+                } else {
+                    System.out.println("Não foi possível realizar a operação!");
+                }
+                break;
             default:
                 System.out.println("Essa funcionalidade ainda não foi implementada");
         }
