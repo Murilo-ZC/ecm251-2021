@@ -6,6 +6,12 @@ public class Conta {
     private double saldo;
     private int numero;
 
+    public Conta(String nome, double saldoInicial, int numero) {
+        this.saldo = saldoInicial;
+        this.numero = numero;
+        this.cliente = new Cliente(nome);
+    }
+
     //Métodos da classe
     public void depositar(double valor) {
         //this.saldo = this.saldo + valor;
@@ -29,7 +35,7 @@ public class Conta {
     }
 
 
-    public double visualizarSaldo() {
+    public double getSaldo() {
         return this.saldo;
     }
 
